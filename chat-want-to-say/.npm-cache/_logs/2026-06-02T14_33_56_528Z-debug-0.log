@@ -1,0 +1,43 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.20.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:D:\girlfriend-gift-collection-master\chat-want-to-say\.npmrc
+5 silly config load:file:C:\Users\Gagan Kumar\.npmrc
+6 silly config load:file:C:\Users\Gagan Kumar\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" ".\\.npm-cache"
+9 verbose logfile logs-max:10 dir:D:\girlfriend-gift-collection-master\chat-want-to-say\.npm-cache\_logs\2026-06-02T14_33_56_528Z-
+10 verbose logfile D:\girlfriend-gift-collection-master\chat-want-to-say\.npm-cache\_logs\2026-06-02T14_33_56_528Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @varlet/ui@https://registry.npmmirror.com/@varlet/ui/download/@varlet/ui-1.24.1.tgz
+15 http cache @varlet/ui@https://registry.npmmirror.com/@varlet/ui/download/@varlet/ui-1.24.1.tgz 1ms (cache hit)
+16 silly tarball no local data for @varlet/ui@https://registry.npmmirror.com/@varlet/ui/download/@varlet/ui-1.24.1.tgz. Extracting by manifest.
+17 http fetch GET https://registry.npmmirror.com/@varlet/ui/download/@varlet/ui-1.24.1.tgz attempt 1 failed with EACCES
+18 http fetch GET https://registry.npmmirror.com/@varlet/ui/download/@varlet/ui-1.24.1.tgz attempt 2 failed with EACCES
+19 http fetch GET https://registry.npmmirror.com/@varlet/ui/download/@varlet/ui-1.24.1.tgz attempt 3 failed with EACCES
+20 silly fetch manifest animate.css@https://registry.npmmirror.com/animate.css/download/animate.css-4.1.1.tgz
+21 http cache animate.css@https://registry.npmmirror.com/animate.css/download/animate.css-4.1.1.tgz 0ms (cache hit)
+22 silly tarball no local data for animate.css@https://registry.npmmirror.com/animate.css/download/animate.css-4.1.1.tgz. Extracting by manifest.
+23 http fetch GET https://registry.npmmirror.com/animate.css/download/animate.css-4.1.1.tgz attempt 1 failed with EACCES
+24 http fetch GET https://registry.npmmirror.com/animate.css/download/animate.css-4.1.1.tgz attempt 2 failed with EACCES
+25 http fetch GET https://registry.npmmirror.com/animate.css/download/animate.css-4.1.1.tgz attempt 3 failed with EACCES
+26 silly fetch manifest typed.js@https://registry.npmmirror.com/typed.js/download/typed.js-2.0.12.tgz
+27 http cache typed.js@https://registry.npmmirror.com/typed.js/download/typed.js-2.0.12.tgz 0ms (cache hit)
+28 silly tarball no local data for typed.js@https://registry.npmmirror.com/typed.js/download/typed.js-2.0.12.tgz. Extracting by manifest.
+29 http fetch GET https://registry.npmmirror.com/typed.js/download/typed.js-2.0.12.tgz attempt 1 failed with EACCES
+30 http fetch GET https://registry.npmmirror.com/typed.js/download/typed.js-2.0.12.tgz attempt 2 failed with EACCES
+31 http fetch GET https://registry.npmmirror.com/typed.js/download/typed.js-2.0.12.tgz attempt 3 failed with EACCES
+32 silly fetch manifest vue@https://registry.npmmirror.com/vue/download/vue-3.2.26.tgz
+33 http cache vue@https://registry.npmmirror.com/vue/download/vue-3.2.26.tgz 0ms (cache hit)
+34 silly tarball no local data for vue@https://registry.npmmirror.com/vue/download/vue-3.2.26.tgz. Extracting by manifest.
+35 http fetch GET https://registry.npmmirror.com/vue/download/vue-3.2.26.tgz attempt 1 failed with EACCES
+36 http fetch GET https://registry.npmmirror.com/vue/download/vue-3.2.26.tgz attempt 2 failed with EACCES
+37 http fetch GET https://registry.npmmirror.com/vue/download/vue-3.2.26.tgz attempt 3 failed with EACCES
+38 silly fetch manifest @vitejs/plugin-vue@https://registry.npmmirror.com/@vitejs/plugin-vue/download/@vitejs/plugin-vue-2.0.1.tgz
+39 http cache @vitejs/plugin-vue@https://registry.npmmirror.com/@vitejs/plugin-vue/download/@vitejs/plugin-vue-2.0.1.tgz 0ms (cache hit)
+40 silly tarball no local data for @vitejs/plugin-vue@https://registry.npmmirror.com/@vitejs/plugin-vue/download/@vitejs/plugin-vue-2.0.1.tgz. Extracting by manifest.
+41 http fetch GET https://registry.npmmirror.com/@vitejs/plugin-vue/download/@vitejs/plugin-vue-2.0.1.tgz attempt 1 failed with EACCES
+42 http fetch GET https://registry.npmmirror.com/@vitejs/plugin-vue/download/@vitejs/plugin-vue-2.0.1.tgz attempt 2 failed with EACCES
