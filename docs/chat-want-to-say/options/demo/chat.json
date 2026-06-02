@@ -1,0 +1,88 @@
+[
+  { "msgs": ["Hey, I made a little surprise for you."], "msgInputSpeed": 70 },
+  { "msgs": ["It is not perfect, but every part of it was made with love."], "msgInputSpeed": 70 },
+  {
+    "msgs": ["I wanted to say this properly", "I wanted to say this in a way you could keep."],
+    "msgInputSpeed": 70
+  },
+  { "msgs": ["First: you make ordinary days feel special."], "msgInputSpeed": 60 },
+  {
+    "msgs": ["And yes, this message can switch sides too."],
+    "msgInputSpeed": 70,
+    "author": "me"
+  },
+  {
+    "msgs": ["Some words deserve a little color."],
+    "msgInputSpeed": 70
+  },
+  {
+    "msgs": ["<span style=\"color: red;\">You are my favorite person.</span>"],
+    "msgInputSpeed": 70
+  },
+  {
+    "msgs": ["Before I continue, type yes if you want to hear something sweet."],
+    "msgInputSpeed": 70,
+    "triggerNextAction": {
+      "type": "userInput",
+      "options": {
+        "resolveKeyTexts": ["yes", "yep", "sure", "okay", "ok"],
+        "rejectKeyTexts": [],
+        "rejectHitTexts": ["Type yes, please.", "I am going to continue anyway, because this is important."]
+      }
+    }
+  },
+  { "msgs": ["You are kind, funny, beautiful, and somehow still patient with me."], "msgInputSpeed": 70 },
+  { "msgs": ["Here is a tiny memory placeholder."], "msgInputSpeed": 70 },
+  { "msgs": ["<img src='options/demo/imgs/test.png'/>"] },
+  { "msgs": ["I also added a small video section."], "msgInputSpeed": 70 },
+  { "msgs": ["Open it when you are ready."], "msgInputSpeed": 70 },
+  {
+    "msgs": ["<vlog src='options/demo/vlogs/test.mp4'/>"],
+    "triggerNextAction": { "type": "componentClose" }
+  },
+  { "msgs": ["And now, a letter."], "msgInputSpeed": 70 },
+  { "msgs": ["This part has the things I wanted to say slowly."], "msgInputSpeed": 70 },
+  {
+    "msgs": ["<letter src='options/demo/letters/test.json'/>"],
+    "triggerNextAction": { "type": "componentClose" }
+  },
+  {
+    "msgs": ["Can I tell you one more thing?"],
+    "msgInputSpeed": 50,
+    "triggerNextAction": {
+      "type": "userInput",
+      "options": {
+        "resolveKeyTexts": ["yes", "sure", "okay", "ok", "tell me"],
+        "rejectKeyTexts": ["no"],
+        "rejectHitTexts": [
+          "I promise it is a good thing.",
+          "Too late, I am saying it anyway."
+        ]
+      }
+    }
+  },
+  { "msgs": ["I am really grateful for you."], "msgInputSpeed": 70 },
+  {
+    "msgs": ["Guess what I am thinking about."],
+    "msgInputSpeed": 70,
+    "triggerNextAction": {
+      "type": "userInput",
+      "options": {
+        "resolveKeyTexts": ["me", "you"],
+        "rejectKeyTexts": ["game", "food"],
+        "rejectHitTexts": [
+          "Close, but not quite.",
+          ["Hint:", "It is you."],
+          "Still not there?",
+          ["Fine, here is another clue.", "<img src='options/demo/imgs/test.png'>"]
+        ]
+      }
+    }
+  },
+  { "msgs": ["I was thinking about you.", "Obviously, I was thinking about you."], "msgInputSpeed": 70 },
+  { "msgs": ["Thank you for being in my life."], "msgInputSpeed": 70 },
+  {
+    "msgs": ["That is the end of this little surprise."],
+    "msgInputSpeed": 70
+  }
+]
