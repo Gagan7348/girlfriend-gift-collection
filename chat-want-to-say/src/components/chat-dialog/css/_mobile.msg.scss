@@ -39,15 +39,20 @@
         font-size: $font-size-basic;
         line-height: 24px;
 
-        background: white;
+        background: rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.06);
         border-radius: $msg-radius;
-        box-shadow: 5px 5px 15px 0 rgba(102, 102, 102, 0.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 
         transition: width .12s ease-out, height .12s ease-out;
         transform: translate3d(0, 0, 0);
 
         .msg-author & {
             border-radius: 0 $msg-radius $msg-radius $msg-radius;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
 
         .msg-me & {
@@ -56,8 +61,10 @@
             float: right;
 
             color: white;
+            border: none;
             border-radius: $msg-radius $msg-radius 0 $msg-radius;
-            box-shadow: 5px 5px 15px 0 rgba(102, 102, 102, 0.15);
+            box-shadow: 0 4px 15px rgba(255, 107, 138, 0.3);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
         }
 
         img {
@@ -69,7 +76,7 @@
             display: inline-block;
             width: 10px;
             height: 10px;
-            background: #b0e9e0;
+            background: rgba(255, 107, 138, 0.5);
             border-radius: 50%;
             transform-origin: 50% 50%;
             animation: dotZoomIn 1.4s infinite;

@@ -8,9 +8,12 @@
     width: $mobile-width;
     margin-left: -$mobile-width / 2;
 
-    background-color: white;
-    border-radius: $radius-lg;
-    box-shadow: 0 0 30px 0 rgba(34, 195, 170, 0.5);
+    background: rgba(15, 10, 30, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 107, 138, 0.15);
+    box-shadow: 0 0 60px rgba(255, 107, 138, 0.2), 0 0 120px rgba(192, 132, 252, 0.1);
 
     transform: translate3d(0, 0, 0);
 }
@@ -19,14 +22,18 @@
         width: 100%;
         height: $mobile-head-height - 1;
 
-        background: white;
+        background: rgba(255, 255, 255, 0.03);
+        border-bottom: 1px solid rgba(255, 107, 138, 0.1);
     }
 
         #mobile-head-title {
             padding: 12px;
 
-            color: $clr-text-light;
+            color: white;
             text-align: center;
+            letter-spacing: 2px;
+            font-weight: 400;
+            text-shadow: 0 0 10px rgba(255, 107, 138, 0.3);
         }
 
     #mobile-foot {
@@ -36,8 +43,8 @@
         width: 100%;
         height: $mobile-foot-height - 1;
 
-        background: #f7f8fa;
-        border-top: 1px solid $clr-border-light;
+        background: rgba(15, 10, 30, 0.9);
+        border-top: 1px solid rgba(255, 107, 138, 0.15);
     }
 
         .say-something {
