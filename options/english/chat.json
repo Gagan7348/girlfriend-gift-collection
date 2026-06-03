@@ -1,0 +1,55 @@
+[
+  { "msgs": ["Hey Avani, happy birthday."], "msgInputSpeed": 65 },
+  { "msgs": ["I made this special website for you because I wanted your birthday wish to feel special."], "msgInputSpeed": 65 },
+  {
+    "msgs": ["Not just a simple text message", "Something you can open, smile at, and remember."],
+    "msgInputSpeed": 65
+  },
+  { "msgs": ["You mean a lot to me, and today deserves something a little extra."], "msgInputSpeed": 65 },
+  {
+    "msgs": ["So this is my small birthday surprise for you."],
+    "msgInputSpeed": 65,
+    "author": "me"
+  },
+  {
+    "msgs": ["Before we continue, type yes when you are ready."],
+    "msgInputSpeed": 65,
+    "triggerNextAction": {
+      "type": "userInput",
+      "options": {
+        "resolveKeyTexts": ["yes", "yep", "ready", "sure", "ok", "okay"],
+        "rejectKeyTexts": [],
+        "rejectHitTexts": ["Type yes when you are ready.", "Okay, I am starting the surprise anyway."]
+      }
+    }
+  },
+  { "msgs": ["First, I want you to know this."], "msgInputSpeed": 65 },
+  { "msgs": ["You make ordinary moments feel warmer, softer, and happier."], "msgInputSpeed": 65 },
+  {
+    "msgs": ["<span style=\"color: red;\">Happy Birthday, Avani. You are truly special.</span>"],
+    "msgInputSpeed": 65
+  },
+  { "msgs": ["I hope you liked this special gift."], "msgInputSpeed": 65 },
+  { "msgs": ["We all wished you with so much love, and this page is just a small way to keep those wishes close."], "msgInputSpeed": 65 },
+  { "msgs": ["There is also a letter for you."], "msgInputSpeed": 65 },
+  {
+    "msgs": ["<letter src='options/english/letter.json'/>"],
+    "triggerNextAction": { "type": "componentClose" }
+  },
+  {
+    "msgs": ["Can I tell you one more thing?"],
+    "msgInputSpeed": 50,
+    "triggerNextAction": {
+      "type": "userInput",
+      "options": {
+        "resolveKeyTexts": ["yes", "sure", "okay", "ok", "tell me"],
+        "rejectKeyTexts": ["no"],
+        "rejectHitTexts": ["Please say yes.", "I am saying it anyway because it is your birthday."]
+      }
+    }
+  },
+  { "msgs": ["I hope this year gives you more smiles, more peace, and more reasons to feel loved."], "msgInputSpeed": 65 },
+  { "msgs": ["You deserve happiness that feels easy, honest, and endless."], "msgInputSpeed": 65 },
+  { "msgs": ["Happy Birthday once again, Avani."], "msgInputSpeed": 65 },
+  { "msgs": ["With love, from me."], "msgInputSpeed": 65 }
+]
