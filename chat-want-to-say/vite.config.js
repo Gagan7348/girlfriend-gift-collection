@@ -5,6 +5,10 @@ import vue from '@vitejs/plugin-vue'
 export default ({ mode }) => {
   return defineConfig({
     base: loadEnv(mode, process.cwd()).VITE_BASE_URL,
-    plugins: [vue()]
+    plugins: [vue()],
+    build: {
+      outDir: '../docs',
+      emptyOutDir: true
+    }
   })
 }

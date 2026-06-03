@@ -9,7 +9,7 @@
     </section>
 
     <section class="option-grid">
-      <a class="option-card" href="/birthday-cake/index.html">
+      <a class="option-card" href="birthday-cake/index.html">
         <img src="/collection-assets/birth-want-to-say.jpg" alt="Birthday cake preview" />
         <div class="option-content">
           <p>Birthday Cake</p>
