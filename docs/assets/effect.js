@@ -220,12 +220,7 @@ $('document').ready(function () {
 
     $('#story').click(function () {
         $(this).fadeOut('slow');
-        $('.cake')
-            .fadeOut('fast')
-            .promise()
-            .done(function () {
-                $('.message').fadeIn('slow');
-            });
+        $('.message').fadeIn('slow');
 
         // Hide all messages initially
         $('.message p').hide();
@@ -234,8 +229,7 @@ $('document').ready(function () {
 
         function msgLoop() {
             if (i > config.texts.length) {
-                // All messages shown, show final cake and love text
-                $('.cake').fadeIn('fast');
+                // All messages shown, show final love text
                 $('.love_text').css('display', 'block');
                 return;
             }
