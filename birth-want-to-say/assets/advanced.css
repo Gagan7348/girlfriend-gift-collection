@@ -1,8 +1,12 @@
-/* Advanced styling for birthday cake page */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&family=Playfair+Display:ital,wght@1,700&display=swap');
+
+/* Ultra Advanced & Modern styling for birthday cake page */
 body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: radial-gradient(circle at top, #201335 0%, #0d0718 100%);
     min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
 }
 
 .celebration-bg {
@@ -13,177 +17,272 @@ body {
     height: 100%;
     z-index: -1;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .celebration-bg span {
     position: absolute;
     display: block;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    animation: move 25s infinite;
+    font-size: 32px;
+    background: none !important;
+    box-shadow: none !important;
+    animation: move 20s infinite linear;
     bottom: -150px;
+    filter: drop-shadow(0 0 8px rgba(255, 105, 180, 0.6));
+    opacity: 0;
 }
 
-.celebration-bg span:nth-child(1) {
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-}
-
-.celebration-bg span:nth-child(2) {
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
-}
-
-.celebration-bg span:nth-child(3) {
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 4s;
-}
-
-.celebration-bg span:nth-child(4) {
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
-}
-
-.celebration-bg span:nth-child(5) {
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 0s;
-}
-
-.celebration-bg span:nth-child(6) {
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3s;
-}
+.celebration-bg span:nth-child(1) { left: 15%; animation-delay: 0s; animation-duration: 18s; }
+.celebration-bg span:nth-child(2) { left: 35%; animation-delay: 3s; animation-duration: 22s; }
+.celebration-bg span:nth-child(3) { left: 55%; animation-delay: 1s; animation-duration: 25s; }
+.celebration-bg span:nth-child(4) { left: 75%; animation-delay: 5s; animation-duration: 17s; }
+.celebration-bg span:nth-child(5) { left: 90%; animation-delay: 2s; animation-duration: 20s; }
+.celebration-bg span:nth-child(6) { left: 5%; animation-delay: 7s; animation-duration: 24s; }
+.celebration-bg span:nth-child(7) { left: 45%; animation-delay: 4s; animation-duration: 19s; }
+.celebration-bg span:nth-child(8) { left: 80%; animation-delay: 6s; animation-duration: 23s; }
 
 @keyframes move {
     0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
+        transform: translateY(0) rotate(0deg) scale(0.6);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.8;
     }
     100% {
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(-115vh) rotate(720deg) scale(1.2);
         opacity: 0;
-        border-radius: 50%;
     }
 }
 
 .birthday-intro {
     text-align: center;
-    padding: 40px 20px;
+    padding: 35px 20px;
     color: white;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 24px;
+    margin: 30px auto;
     max-width: 600px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border: none;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
 }
 
 .birthday-intro p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.85;
 }
 
 .birthday-intro h1 {
-    font-size: 3em;
-    margin: 20px 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    margin: 10px 0;
+    text-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+    background: linear-gradient(45deg, #ff758f, #ffccd5, #ff758f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .birthday-intro span {
-    font-size: 1.1em;
-    opacity: 0.9;
+    font-size: 1em;
+    font-weight: 300;
+    opacity: 0.75;
+    letter-spacing: 1px;
 }
 
 .birthday-heading {
     text-align: center;
-    margin: 30px 0;
+    margin: 25px 0;
 }
 
 .birthday-heading span {
     display: block;
-    font-size: 2em;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
 }
 
 .birthday-heading strong {
     display: block;
-    font-size: 2.5em;
-    color: #FFD700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin-top: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #ff758f;
+    text-shadow: 0 0 25px rgba(255, 117, 143, 0.6);
+    margin-top: 5px;
+}
+
+.cake-cover {
+    margin-top: 40px;
+    position: relative;
+    height: 320px;
+}
+
+.cake-cover::before {
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(255, 117, 143, 0.25) 0%, rgba(255, 117, 143, 0) 70%);
+    z-index: 1;
+    pointer-events: none;
+    animation: glowPulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowPulse {
+    0% { opacity: 0.5; transform: translate(-50%, -50%) scale(0.95); }
+    100% { opacity: 1; transform: translate(-50%, -50%) scale(1.08); }
+}
+
+.cake {
+    z-index: 2;
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.4));
+    animation: cakeFloat 4s ease-in-out infinite;
+}
+
+@keyframes cakeFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* Make cake look strawberry & chocolate premium style */
+.cobertura {
+    background: linear-gradient(180deg, #ffccd5 0%, #ff85a1 100%) !important;
+}
+.cobertura:after,
+.cobertura:before {
+    background: #ff85a1 !important;
+}
+.bizcocho {
+    background: linear-gradient(180deg, #5c3d2e 0%, #3e2723 100%) !important;
 }
 
 .message {
     text-align: center;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    padding: 40px 30px;
+    background: rgba(20, 13, 33, 0.7);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 28px;
+    margin: 30px auto;
+    max-width: 650px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border: none;
 }
 
 .message p {
-    font-size: 1.5em;
-    color: #333;
-    line-height: 1.6;
+    font-size: 1.4em;
+    color: #ffffff;
+    line-height: 1.7;
     margin: 15px 0;
+    font-weight: 300;
+}
+
+.message p img {
+    border-radius: 16px !important;
+    border: 3px solid rgba(255, 117, 143, 0.4) !important;
+    box-shadow: 0 10px 25px rgba(255, 117, 143, 0.3) !important;
 }
 
 .love_text {
     text-align: center;
-    font-size: 1.8em;
-    color: #FFD700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin-top: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8em;
+    color: #ff758f;
+    text-shadow: 0 0 20px rgba(255, 117, 143, 0.6);
+    margin-top: 25px;
     font-weight: bold;
 }
 
 .navbar-fixed-bottom {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 20px 20px 0 0;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(13, 7, 24, 0.75) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 15px 0;
+    border-radius: 24px 24px 0 0;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border: none;
-    padding: 12px 24px;
-    font-size: 1em;
-    margin: 5px;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, rgba(255, 117, 143, 0.25) 0%, rgba(255, 117, 143, 0.1) 100%) !important;
+    border: 1px solid rgba(255, 117, 143, 0.35) !important;
+    padding: 12px 28px !important;
+    font-size: 0.95em !important;
+    margin: 6px !important;
+    border-radius: 50px !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+    text-shadow: none !important;
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, rgba(255, 117, 143, 0.45) 0%, rgba(255, 117, 143, 0.2) 100%) !important;
+    border-color: rgba(255, 117, 143, 0.6) !important;
+    transform: translateY(-4px) scale(1.05) !important;
+    box-shadow: 0 10px 25px rgba(255, 117, 143, 0.35) !important;
 }
 
 .btn-primary:active {
-    transform: translateY(0);
+    transform: translateY(-1px) scale(0.98) !important;
 }
 
-.cake {
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+.balloons h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 117, 143, 0.5);
+    color: white;
+    animation: letterPulse 2s ease-in-out infinite;
+}
+
+@keyframes letterPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+.bulb-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bulb {
+    width: 32px;
+    height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: filter 0.3s ease;
+}
+
+.bulb-glow-yellow, .bulb-glow-red, .bulb-glow-blue, 
+.bulb-glow-green, .bulb-glow-pink, .bulb-glow-orange {
+    animation: bulbGlow 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes bulbGlow {
+    0% { filter: brightness(1) drop-shadow(0 0 2px rgba(255, 255, 255, 0.2)); }
+    100% { filter: brightness(1.7) drop-shadow(0 0 12px rgba(255, 255, 255, 0.8)); }
 }

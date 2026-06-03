@@ -1266,6 +1266,8 @@ audio {
 
 .cake-cover {
 	margin-top: 50px;
+	position: relative;
+	height: 320px;
 }
 .message {
 	margin-top: 200px;

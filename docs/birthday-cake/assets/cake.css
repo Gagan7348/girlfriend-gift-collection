@@ -3,6 +3,7 @@
 .cake {
   position: absolute;
   display: none;
+  top: 0;
   left: 50%;
   margin-left: -150px;
   width: 300px;
