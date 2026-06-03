@@ -146,11 +146,8 @@ $('document').ready(function () {
         $('.balloon-border').animate({ top: -500 }, 8000);
         $('#b1,#b4,#b5,#b7').addClass('balloons-rotate-behaviour-one');
         $('#b2,#b3,#b6').addClass('balloons-rotate-behaviour-two');
-        // $('#b3').addClass('balloons-rotate-behaviour-two');
-        // $('#b4').addClass('balloons-rotate-behaviour-one');
-        // $('#b5').addClass('balloons-rotate-behaviour-one');
-        // $('#b6').addClass('balloons-rotate-behaviour-two');
-        // $('#b7').addClass('balloons-rotate-behaviour-one');
+        // Hide balloon text initially
+        $('.balloons h2').hide();
         loopOne();
         loopTwo();
         loopThree();
@@ -208,6 +205,16 @@ $('document').ready(function () {
         $('#b66').animate({ top: 240, left: vw + 150 }, 500);
         $('#b77').animate({ top: 240, left: vw + 250 }, 500);
         $('.balloons').css('opacity', '0.9');
+        
+        // Set A V A N I text in balloons
+        $('#b11 h2').text('A');
+        $('#b22 h2').text('V');
+        $('#b33 h2').text('A');
+        $('#b44 h2').text('N');
+        $('#b55 h2').text('I');
+        $('#b66 h2').text('');
+        $('#b77 h2').text('');
+        
         $('.balloons h2').fadeIn(3000);
         $(this)
             .fadeOut('slow')
