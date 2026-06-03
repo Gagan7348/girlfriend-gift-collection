@@ -616,6 +616,9 @@
     <div class="msg-line" id="ml4"></div>
     <div class="msg-line" id="ml5"></div>
     <div class="msg-line" id="ml6"></div>
+    <div class="msg-line" id="ml7"></div>
+    <div class="msg-line" id="ml8"></div>
+    <div class="msg-line" id="ml9"></div>
     <div class="love-finale" id="loveFinale">Forever Yours 💖</div>
   </div>
 
@@ -762,17 +765,18 @@ function floatHearts(n=20){
 ══════════════════════════════════════════════ */
 function typewrite(el, text, delay=0){
   return new Promise(resolve=>{
+    let chars = [...text];
     let i=0;
     el.innerHTML='';
     function next(){
-      if(i>=text.length){ resolve(); return; }
+      if(i>=chars.length){ resolve(); return; }
       const span=document.createElement('span');
       span.className='char visible';
-      span.textContent=text[i]==' '?' ':text[i];
-      if(text[i]==' ') span.style.display='inline';
+      span.textContent=chars[i]==' '?' ':chars[i];
+      if(chars[i]==' ') span.style.display='inline';
       el.appendChild(span);
       i++;
-      setTimeout(next, text[i-1]==='.' || text[i-1]===',' ? 80 : 28);
+      setTimeout(next, chars[i-1]==='.' || chars[i-1]===',' ? 80 : 28);
     }
     setTimeout(next, delay);
   });
@@ -897,13 +901,16 @@ document.getElementById('btn_msg').onclick = async function(){
   this.classList.remove('active');
 
   const lines=[
-    '🌹 Avani…',
-    'Every day feels like a gift because you are in it.',
-    'Your laughter is my favourite sound in the whole world.',
-    'You make even the smallest moments feel extraordinary. 💕',
-    'On your birthday, I want you to know —',
-    'You are so deeply loved. More than words can ever say.',
-    '🎂 Happy Birthday, my love. May this year be your most magical yet. ✨'
+    '🌹 Avani… my beautiful Avani.',
+    'I wanted to make this birthday extra special for you.',
+    'Every day feels like a precious gift because you are in it.',
+    'Your smile lights up my darkest days, and your laughter is my favourite sound.',
+    'I cherish every moment we share together, both the big and the small.',
+    'You make my life feel extraordinary, just by being you. 💕',
+    'On this special day, I want you to know how deeply I love you.',
+    'I promise to stand by your side, always and forever.',
+    'You are the best thing that ever happened to me.',
+    '🎂 Happy Birthday, my love. May this year bring you all the joy you deserve! ✨'
   ];
 
   for(let i=0;i<lines.length;i++){
